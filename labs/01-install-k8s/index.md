@@ -28,7 +28,8 @@ Following commands must be run as the root user. To become root run:
 ```
 sudo su - 
 ```
-## Install Docker Runtime NOTE: This will have to be done on all servers
+## Install Docker Runtime 
+NOTE: This will have to be done on all servers
 ```
 apt-get update
 apt-get install \
@@ -40,14 +41,12 @@ apt-get install \
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
-
-## Setup Stable Repo
+```
 add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
-
-## Install Docker 
+```
 ```
 apt-get update
 apt-get install docker-ce docker-ce-cli containerd.io
