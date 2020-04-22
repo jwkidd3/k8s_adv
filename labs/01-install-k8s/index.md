@@ -73,6 +73,7 @@ Now that you've added the repository install the packages
 apt-get update
 apt-get install -y kubelet=1.17.0-00 kubeadm=1.17.0-00 kubectl
 ```
+***Note: kubectl does not need to be installed on worker nodes
 
 The kubelet is now restarting every few seconds, as it waits in a `crashloop` for `kubeadm` to tell it what to do.
 
@@ -87,7 +88,7 @@ If everything was successful output will contain
 Your Kubernetes master has initialized successfully!
 ````
 
-Note the `kubeadm join...` command, it will be needed later on.
+Note the `kubeadm join...` command, it will be needed later on. Save this in a text editor.
 
 Exit to ubuntu user 
 ```
