@@ -32,7 +32,7 @@ sudo su -
 NOTE: This will have to be done on all servers
 ```
 apt-get update
-apt-get install \
+apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -49,7 +49,7 @@ add-apt-repository \
 ```
 ```
 apt-get update
-apt-get install docker-ce docker-ce-cli containerd.io
+apt-get install -y  docker-ce docker-ce-cli containerd.io
 ```
 
 ## Install packages required for Kubernetes on all servers as the root user
