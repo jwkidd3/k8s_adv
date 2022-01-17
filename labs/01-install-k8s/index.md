@@ -26,7 +26,7 @@ Use the Ubuntu Server 18.04 LTS AMI for your region
 Use the default security group for all instances - make sure all ports are open for in/out traffic
 Both Instances should be part of the same subnet (in the same VPC)
 
-Create 2 instances: 1 master/1 worker - set their name label to your initials-master/your initials-worker1 (e.g jk-master/jk-worker1)
+Create 3 instances: 1 master/2 worker - set their name label to your initials-master/your initials-worker1 (e.g jk-master/jk-worker1)
 
 ## Install Kubernetes on all servers
 
