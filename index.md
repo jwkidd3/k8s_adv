@@ -2,17 +2,6 @@
 
 This site includes the slides and labs for the Advanced Kubernetes class. 
 
-
-## lab VMs  
-[//]: # (https://docs.google.com/spreadsheets/d/1psMAAPxgHq9wpZVftao9UT8MIWR1xljq-WB8aOiVBRI/edit?usp=sharing)  
-Instructor will provide lab VM sheet.
-
-[Lab Setup](labs/001-setup/)  
-
-## Course Content
-[//]: # (https://drive.google.com/file/d/1V63Vpq_WlhV7G46KQmejswdbXLjgbKdV/view?usp=sharing)  
-[Slides](https://bit.ly/adv-k8s-content)
-
 ## Labs
 
 ### Day 1
