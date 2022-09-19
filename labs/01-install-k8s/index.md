@@ -1,6 +1,6 @@
 # Install Kubernetes on AWS
 ## Log into all servers 
-### MacOS 
+
 Run the following commands in a terminal 
 
 ## Create Instances
