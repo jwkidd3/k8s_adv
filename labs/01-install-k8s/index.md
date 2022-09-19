@@ -2,27 +2,9 @@
 ## Log into all servers 
 ### MacOS 
 Run the following commands in a terminal 
-```
-chmod 600 /path/to/lab.pem
-ssh -i /path/to/lab.pem ubuntu@<server IP>
-```
-
-### Windows 
-Open Putty and configure a new session. 
-  
-![](index/C4EC1E64-175D-4C84-8C49-D938337FA35A%208.png)
-
-
-Expand “Connection/SSH/Auth and then specify the PPK file 
-
-![](index/6FFB137C-1AD8-48A1-97E6-F5F6DA4BC55B%208.png)
-
- Now save your session 
-
-![](index/FD3BA694-FD69-4C86-8EAF-4D5FC813EABA%208.png)
 
 ## Create Instances
-Use the Ubuntu Server 18.04 LTS AMI for your region
+Use the Ubuntu Server 18.04 LTS AMI for your region. Use small instance type: t2.small or t3.small
 Use the default security group for all instances - make sure all ports are open for in/out traffic
 Both Instances should be part of the same subnet (in the same VPC)
 
