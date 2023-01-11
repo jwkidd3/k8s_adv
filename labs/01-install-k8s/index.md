@@ -53,7 +53,7 @@ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/
 Now that you've added the repository install the packages
 ```
 apt-get update
-apt-get install -y kubelet=1.17.0-00 kubeadm=1.17.0-00 kubectl
+apt-get install -y kubelet=1.24.0-00 kubeadm=1.24.0-00 kubectl
 ```
 ***Note: kubectl does not need to be installed on worker nodes
 
