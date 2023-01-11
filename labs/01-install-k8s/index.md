@@ -5,7 +5,7 @@ Run the following commands in a terminal
 
 ## Create Instances
 Use the Ubuntu Server 18.04 LTS AMI for your region. Use small instance type: t2.small or t3.small
-Use the default security group for all instances - make sure all ports are open for in/out traffic
+Use the k8s security group for all instances - make sure all ports are open for in/out traffic
 Both Instances should be part of the same subnet (in the same VPC)
 
 Create 3 instances: 1 master/2 worker - set their name label to your initials-master/your initials-worker1 (e.g jk-master/jk-worker1)
