@@ -17,7 +17,7 @@ Following commands must be run as the root user. To become root run:
 sudo su - 
 ```
 ## Install Docker Runtime 
-NOTE: This will have to be done on all servers
+NOTE: This will have to be done on all servers - will have to be done as sudo
 ```
 apt-get update
 apt-get install -y \
