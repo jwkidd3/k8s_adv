@@ -62,7 +62,7 @@ The kubelet is now restarting every few seconds, as it waits in a `crashloop` fo
 ### Initialize the Master 
 Run the following command on the master node to initialize 
 ```
-kubeadm init --kubernetes-version=1.17.0 --ignore-preflight-errors=all
+kubeadm init --kubernetes-version=1.24.0 --ignore-preflight-errors=all
 ```
 
 If everything was successful output will contain 
