@@ -5,7 +5,7 @@ Run the following commands in a terminal
 
 ## Create Instances
 Use the Ubuntu Server 18.04 LTS AMI for your region. Use small instance type: t2.small or t3.small
-Use the default security group for all instances - make sure all ports are open for in/out traffic
+Use the k8s security group for all instances - make sure all ports are open for in/out traffic
 Both Instances should be part of the same subnet (in the same VPC)
 
 Create 3 instances: 1 master/2 worker - set their name label to your initials-master/your initials-worker1 (e.g jk-master/jk-worker1)
@@ -17,7 +17,7 @@ Following commands must be run as the root user. To become root run:
 sudo su - 
 ```
 ## Install Docker Runtime 
-NOTE: This will have to be done on all servers
+NOTE: This will have to be done on all servers - will have to be done as sudo
 ```
 apt-get update
 apt-get install -y \
@@ -93,6 +93,8 @@ sudo sysctl net.bridge.bridge-nf-call-iptables=1
 Install a Pod network on the master node
 ```
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+
+kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
 ```
 
 Wait until `coredns` pod is in a `running` state
@@ -113,4 +115,6 @@ watch kubectl get nodes
 
 When they are in a `Ready` state the cluster is online and nodes have been joined. 
 
+Setup kubectl in your environment (local or cloud 9)
+scp -i u<your pep>.pem  ubuntu@<master IP>:~/.kube/config /home/ubuntu/.kube/
 # Congrats! 
