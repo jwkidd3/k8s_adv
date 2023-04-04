@@ -15,6 +15,5 @@ spec:
       schedulerName: random-scheduler
       containers:
       - name: sleep
-        image: tutum/curl
-        command: ["/bin/sleep","infinity"]
+        image: nginx:latest
         imagePullPolicy: IfNotPresent
